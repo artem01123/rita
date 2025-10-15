@@ -200,88 +200,131 @@
 .himg{
     text-decoration: none;
 }
-@media (max-width: 1000px) {
-    .BW{
-    padding-left: 0;
-    text-align:center;
-    width: 900px;
-    }
-    .image1{
-    padding-left: 0px;
-    width:350px;
-    height: 250px;
-    }
-.image2{
-    padding-top: 150px;
-    padding-left: 0px;
-    width:350px;
-    height: 250px;
-    }
-    .one_part{
-        height: 925px;
-    }
-    .desc_AdoYA{
-        font-size: 20px;
-        margin-top: 0;
-        width: 600px;
-    }
-    .foot{
-        height: 350px;
-    }
-    .gmail{
-        font-size: 17px;
-        margin-top: 60px;
-        width: 250px;
-        padding-left: 0;
-        padding-right: 30px;
-    }
-    .soc{
-        justify-items: right;
-        justify-content: right;
-        margin-left: 50px;
-        margin-right: 0px;
-        padding-right: 0px;
-    }
-    .image_program{
-    align-items: center;
-    
-    width: 550px;
-    height:1350px ;
-    display: flex;
-    position: absolute;
-    justify-content:center ;
-    
-    margin-left: 30px;
-    }
-    .section_pro{
-        height: 3500px;
-    }
-    .dayT{
-        margin-top: 625px;
-    }
-    .dayTR{
-        margin-top: 630px;
-    }
-    .mage1{
-        margin-left: 270px;
-        width: 130%;
-        position: absolute;
-        margin-top: 390px;
-    }
-    .mage2{
-        margin-left: 270px;
-        width: 130%;
-        margin-top: 2560px;
-        position: absolute;
-    }
-    .mage3{
-        margin-left: 270px;
-        width: 130%;
-        margin-top:4410px ;
-        position: absolute;
-    }
-    .btn-container{
-        margin-top: 600px;
+/* --- Адаптация под телефоны --- */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
     }
 
+    .head {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .logo {
+        width: 140px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .BW {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .one_part {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .description {
+        width: 90%;
+        height: auto;
+        padding: 0 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .desc_image {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .image1, .image2 {
+        width: 90%;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .ifki {
+        padding-left: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .section_pro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dayF, .dayT, .dayTR {
+        width: 90%;
+        margin: 15px 0;
+        height: auto;
+    }
+
+    .image_program {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .image {
+        width: 90%;
+        height: auto;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 10px 0;
+        font-size: 18px;
+        height: 55px;
+    }
+
+    .foot {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .firstDiv, .twoDiv {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .gmail {
+        padding: 0;
+        text-align: center;
+    }
+
+    .soc {
+        margin: 10px 0;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .socIMG, .socIMGW {
+        width: 45px;
+        height: 45px;
+    }
 }

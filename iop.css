@@ -201,18 +201,22 @@
     text-decoration: none;
 }
 /* --- Адаптация под телефоны --- */
+/* --- Адаптация под телефоны --- */
 @media (max-width: 768px) {
 
     body {
-        font-size: 16px;
+        margin: 0;
+        padding: 0;
         overflow-x: hidden;
+        font-size: 16px;
     }
 
+    /* Верхняя часть */
     .head {
         flex-direction: column;
         align-items: center;
-        height: auto;
         text-align: center;
+        height: auto;
     }
 
     .logo {
@@ -224,8 +228,10 @@
     .BW {
         padding: 0;
         font-size: 20px;
+        text-align: center;
     }
 
+    /* Описание */
     .one_part {
         flex-direction: column;
         align-items: center;
@@ -254,12 +260,14 @@
         padding-left: 0;
     }
 
+    /* Текст под описанием */
     .ifki {
         padding-left: 0;
         text-align: center;
         font-size: 18px;
     }
 
+    /* Раздел с днями */
     .section_pro {
         flex-direction: column;
         align-items: center;
@@ -269,40 +277,65 @@
         width: 90%;
         margin: 15px 0;
         height: auto;
+        text-align: center;
     }
 
+    /* Фото после каждого дня (каждое отдельно) */
     .image_program {
-        flex-direction: column;
-        margin: 0;
-        align-items: center;
         width: 100%;
-        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
     }
 
     .image {
         width: 90%;
         height: auto;
+        border-radius: 10px;
     }
 
+    /* Кнопки — центр */
     .btn-container {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 10px;
+        margin: 20px 0;
     }
 
     .btn {
         width: 80%;
-        margin: 10px 0;
-        font-size: 18px;
         height: 55px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #FFE799;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.2s ease;
     }
 
+    .btn:hover {
+        background-color: #ffdf74;
+    }
+
+    /* Футер — без прокрутки, на всю ширину */
     .foot {
+        display: flex;
         flex-direction: column;
-        height: auto;
         align-items: center;
+        justify-content: center;
         text-align: center;
-        padding: 20px;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 20px 0;
+        background-color: #FFE799;
+        border-radius: 0;
+        border: none;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     .firstDiv, .twoDiv {
@@ -311,9 +344,15 @@
         padding: 10px;
     }
 
+    .desc_AdoYA {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
     .gmail {
         padding: 0;
         text-align: center;
+        font-size: 18px;
     }
 
     .soc {
@@ -321,6 +360,7 @@
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .socIMG, .socIMGW {

@@ -272,9 +272,11 @@
     }
 
     .image_program {
+        display: flex;
+        justify-content:right;
         flex-direction: column;
         margin: 0;
-        align-items: center;
+        align-items: end;
         width: 100%;
         height: auto;
     }
@@ -285,10 +287,25 @@
     }
 
     .btn-container {
+        width: 100%;
+        
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
+
+    .tour, .program, .dF, .dT, .dTR {
+        text-align: center;
+    }
+
+    .section_pro {
+        text-align: center;
+    }
+
+
 
     .btn {
         width: 80%;
@@ -326,5 +343,59 @@
     .socIMG, .socIMGW {
         width: 45px;
         height: 45px;
+    }
+}
+/* --- Адаптация под ноутбуки --- */
+@media (max-width: 1280px) and (min-width: 769px) {
+
+    .description {
+        width: 80%;
+        font-size: 20px;
+        padding-left: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .one_part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desc_image {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image1, .image2 {
+        width: 80%;
+        padding-left: 0;
+        height: auto;
+    }
+
+    .dayF, .dayT, .dayTR {
+        width: 80%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .image_program {
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-container {
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .btn {
+        width: 300px;
     }
 }
